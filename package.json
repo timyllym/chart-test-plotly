@@ -1,0 +1,18 @@
+{
+  "name": "chartTest",
+  "version": "0.0.0",
+  "description": "A test with google web components",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Timo Myllymäki <timo.myllymaki@cybercom.com>",
+  "license": "ISC",
+  "repository": "https://github.com/timyllym/chart-test.git",
+  "dependencies": {
+    "express": "^4.13.4",
+    "lodash": "^4.3.0",
+    "node-snap7": "^0.2.2",
+    "socket.io": "^1.4.5"
+  }
+}
