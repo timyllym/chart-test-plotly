@@ -13,8 +13,7 @@ function serve(where, what) {
 // For static files, we will return them.
 app.use(express.static(path.join(__dirname, 'public')));
 //app.use(express.static(__dirname));
-serve('/lib/svm/svm.js', 'node_modules/svm/lib/svm.js');
-serve('/train/indoor.json', 'datasets/sml2010/internalTrainingSet.json');
+serve('/charts', 'public/charts.html');
 serve('/train/outdoor.json', 'datasets/sml2010/externalTrainingSet.json');
 serve('/test/indoor.json', 'datasets/sml2010/internalTestSet.json');
 serve('/test/outdoor.json', 'datasets/sml2010/externalTestSet.json');

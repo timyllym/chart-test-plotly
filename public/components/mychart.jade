@@ -1,0 +1,14 @@
+// output: mychart.html
+
+doctype html
+html
+  head
+    link(href="../bower_components/polymer/polymer.html" rel="import")
+    
+  dom-module#mychart
+    template
+      style
+        include mychart.css
+      div#chart
+  script(src="../bower_components/plotly/plotly.js")
+  script(src="mychart.js")

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../bower_components/polymer/polymer.html" rel="import">
+  </head>
+  <dom-module id="mychart">
+    <template>
+      <style>:host {
+  font-family: Roboto;
+}
+.content {
+  height: 100%;
+}
+#chart {
+  height: 100%;
+  width: 100%;
+}
+
+      </style>
+      <div id="chart"></div>
+    </template>
+  </dom-module>
+  <script src="../bower_components/plotly/plotly.js"></script>
+  <script src="mychart.js"></script>
+</html>

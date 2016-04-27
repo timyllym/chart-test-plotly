@@ -1,0 +1,14 @@
+// output: public/charts.html
+
+doctype html
+html
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    script(src="bower_components/webcomponentsjs/webcomponents-lite.min.js")
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    script(src="bower_components/socket.io-client/socket.io.js")
+    link(rel="import" href="bower_components/iron-flex-layout/classes/iron-flex-layout.html")
+    link(rel="import" href="components/mychart.html")
+    
+  body.fullbleed.layout.vertical
+    mychart

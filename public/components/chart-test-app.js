@@ -19,7 +19,7 @@ Polymer({
         this.mychart = document.getElementById('mychart');
         for (var i = 0; i<numberOfPoints; i++) {
             that.cols.push(i);
-            that.rows.push(Math.random()*20);
+            that.rows.push(Math.random()*20*i/numberOfPoints + Math.random()*3);
         }
     	Plotly.plot( this.mychart, [{
     	x: this.cols,
@@ -32,9 +32,9 @@ Polymer({
             var cols2 = [];
             var rows2 = [];
             if (newstartval < 0) {
-                for (var i = startval; i>=newstartval; i--) {
-                    cols2.splice(0,0,i);
-                    rows2.splice(0,0,Math.random()*20);
+                for (var i = newstartval; i < startval; i++) {
+                    cols2.push(i);
+                    rows2.push(Math.random()*20);
                 }
                 startval = newstartval;
                 that.cols = cols2.concat(that.cols);
@@ -48,7 +48,7 @@ Polymer({
 
     },
     attached() {
-        numberOfPoints = 2800;
+        numberOfPoints = 28800;
         that = this;
         window.addEventListener("resize", this.resizeWindow);
         this.initChart();
